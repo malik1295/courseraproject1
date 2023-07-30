@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Style Placement</title>
+<link rel="stylesheet" href="C:\Users\AR MALIK\Documents\GitHub\courseraproject1\css-files\style.css">
+<!-- see the page you will see that the background color is greenyellow and font size is little large specifically 130% of normal font size this styling is due to the above link which is a kind of relative link that styling is due to this link -->
+<style>
+  /* this type of styling inside the same html page is not preferred by the developers so they form separate style.css files and gave link to the html file  */
+
+h2 {
+  color: red;
+}
+
+</style>
+</head>
+<body>
+<h1>Style Placement</h1>
+<h2>Subheading 1</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium.</p>
+<h2>Subheading 2</h2>
+<p style="text-align: center;">I am centered!</p>
+<!-- this is the style inside the element so we dont need to target the element because we are inside the element  and can add more styles after semicolons so here the sentence i am centered is text aligned this is called inline styling butttt this is the least preferred method because you have to style different lines by many times through this method -->
+</body>
+</html>
+SUMMARY 
+<!-- placing style inline is great for quick testing but try to avoid if you are coding real website
+real sites almost always use external styles sheet and we link back in the external css style sheet this promotes consistent look throughout the site and since we are externalizing css style into one file so each subsequent page will not have to re-download it again and again -->

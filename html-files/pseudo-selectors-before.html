@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pseudo Class Selectors</title>
+<style>
+/* Styles go here. */
+header li{
+    list-style: none;
+    /* without this there will be small bullet points before the link which now be removed note we have used descendent selector here */
+}
+/* now we will style the links inside the li tags and to make it look like buttons. however styling links is not the sme as styling regular elements because links have states and states can be expressed using PSEUDO CLASSES */
+a:link,a:visited{
+    text-decoration:none ; 
+    /* this makes underline remove */
+    background-color: green;
+    border: 1px solid blue;
+    color:black;
+    display: block;
+    /* display:block will make our buttons block level element but contain the whole width of browser window so we specify with by */
+    width: 200px;
+    /* this will make our button 200px wider */
+    text-align: center;
+    /* we can separate different manu buttons by applying margin bottom */
+    margin-bottom:1px ;
+}
+/* now if we want that when user hover over these buttons the state of link change for this we have to state two more states of the link */
+a:hover, a:active{
+    background-color: red;
+    color: purple;
+    /* now when user hover over the button it will change its background color to red */
+}
+/* now nth child  pseudo selector allows you to target a particular element within  a list for example we like to target face book page link and to make it bigger so the we remember to click so as it is located in header section and inside it at the third li element so for this */
+header li:nth-child(3){
+    font-size: 24px;
+}
+/* we can have fun stuff with this :nth-child() selector for example if we want to make the background color of odd member of list elements is gray we can do that by targeting the dive inside the section  and by using nth child we can specify the numbers */
+section div:nth-child(odd){
+    background-color:darkgrey ;
+}
+/* if we want to change the hover  behavior of 4th dive in this list then also this will give example of combination of two pseudo class selectors  */
+section div:nth-child(4):hover{background-color: green;
+cursor: pointer;
+}
+/* REMEMBER: 
+these things are good for fun but this makes code complicated for other users so 
+simple/readable is preferred over complicated/tricky */
+</style>
+</head>
+<body>
+<h1>Pseudo Class Selectors</h1>
+
+<header>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="http://goo.gl/V0Wl6s" target="_blank">AngularJS Course</a></li>
+    <li><a href="http://www.facebook.com/CourseraWebDev" target="_blank">Facebook Fan Page</a></li>
+  </ul>
+</header>
+
+<section>
+  <div>DIV 1</div>
+  <div>DIV 2</div>
+  <div>DIV 3</div>
+  <div>DIV 4</div>
+  <div>DIV 5</div>
+  <div>DIV 6</div>
+  <div>DIV 7</div>
+  <div>DIV 8</div>
+  <div>DIV 9</div>
+  <div>DIV 10</div>
+  <div>DIV 11</div>
+  <div>DIV 12</div>
+  <div>DIV 13</div>
+  <div>DIV 14</div>
+  <div>DIV 15</div>
+  <div>DIV 16</div>
+  <div>DIV 17</div>
+  <div>DIV 18</div>
+  <div>DIV 19</div>
+  <div>DIV 20</div>
+</section>
+
+</body>
+</html>
+<!-- syntax of pseudo class selector 
+Selectors:pseudo-class{
+    ......
+}
+many pseudo selectors exist we cover
+1. :link
+2. :visited 
+3. :hover
+4. :active
+5. :nth-child(....) -->
