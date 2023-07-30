@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Simple Selectors</title>
+
+<style>
+
+/* all h2 elements */
+ h2 {
+  color: red;
+  text-align: center;
+}
+
+
+/* all with class="highlight" */
+.highlight {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: green;
+  opacity: 0.6;
+}
+
+/* element with id="mainPoint" */
+#mainPoint {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: red;
+  opacity: .7;
+}
+
+/* all p AND h1 elements */
+p, h1 {
+  color: blue;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Simple Selectors (h1)</h1>
+<h2>Subheading 1 (h2)</h2>
+<p class="highlight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet alias est? Nobis cum quasi at soluta odit, maiores quaerat dolores expedita ex nemo ea repellendus dolorem sed maxime quos?</p>
+<p class="highlight">Paragraph with attribute class="highlight". Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+<h2>Subheading 2 (h2)</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi nemo ipsum dolores vel modi magnam veniam alias at nam. Voluptatem officiis dolor dolorem aspernatur dolorum modi ipsa, nobis animi aut!</p>
+<div>This is the main point of the entire article. So, attribute 
+<span id="mainPoint">id="mainPoint".</span> </div>
+
+</body>
+</html>
+<!-- element class and id selector -->
+<!-- element Selectors
+p {
+    color:blue;
+} here p is element paragraph 
+this will make every paragraph colored blue
+Class Selectors
+
+.blue {
+    color:blue;
+}
+this starts with a dot and then the name of class this requires a change in html document means class blue must be defined in the tag for example for this syntax we have to have something like this in our html
+.....
+<p class="blue">............</p>
+<p>.................</p> as this does not contain class= blue so this will not be affected by the above syntax
+<div class="blue">..................</div>
+................
+id Selectors
+#name{
+    color:blue;
+}
+this will affect the html written as
+..........
+<p>...............</p>
+<div id="name">....................</div> the text here will be blue as this portion contains that class name
+............
+Grouping Selectors
+div, .blue{
+    color:blue;
+}
+this will affect the code 
+.......
+<p class="blue">..............</p> the text here will be blue
+<p>..............</p> this text will not be affected
+<div>..............</div> the text here will be blue
+.......... -->
