@@ -12,6 +12,8 @@ p.blurb {
 }
 p {
   color: green !important;
+  /* although the first declaration has greater score=12 than the second declaration having score =11 so by the rule first declaration should win and   the text color should be blue butt as u see !important in the third declaration this says it does not matter what the specificity is i want to over write and make this property the way i want so even though it is much more least specific rule having score=1 but due to !important this will be applied over the other 
+  WARNING:never use !important because this is not a good practice to slap all the rules by using just this one  */
 }
 </style>
 </head>
@@ -21,6 +23,32 @@ p {
 </header>
 </body>
 </html>
-Origin precedence rule (when in conflict)
-when two declarations are in conflict means the specify same property for the same target origin precedence rules comes into play and it is very simple rule 
-THE LAST DECLARATION WINS 
+<!-- SPECIFICITY
+MOST SPECIFIC SELECTORS COMBINATION WINS 
+rule for most specific (score) the selector of highest score will win 
+the order of most important to least important is 
+style="...."
+ID 
+class(pseudo class, attribute)
+# of element
+EXAMPLE 1
+div #myparag{
+    color:blue;
+    (score count)
+    here no style is used so 0 for this 
+    id is used so 1 for this
+    no class is used so 0 for this 
+    number of element is one div so 1 for this 
+    so score=101 
+}
+EXAMPLE 2
+div .big p{
+    color:green;
+    (score count)
+here no style is used so 0 for this
+no ID is used so 0 for this
+one class is used .big so 1 for this
+number of elements are two div and p so 2 for this
+score=12
+}
+so first case will win and color of text will be blue -->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Floating Elements one element</title>
+<style>
+
+div {
+  background-color: #00FFFF;
+}
+p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  float: left;
+  margin-right: 10px;
+  /*NO.2  due to these two properties the boxes float left and have margin of 10px to right but now they will be out of div as u see again floating takes them out of regular document flow and comes at section element so in order to correct it we need to tell the browser that when it comes to section element the browser should resume the regular document flow we will do that by using clear property*/
+}
+
+#p1 {
+  background-color: #A52A2A;
+  
+  /*NO.1 float:right after this u will see that the lower boxes move as if there was no maroon box present this is because browser takes them out of regular document flow also see that margin of top box collapse but the margin of floated box doesnt */
+}
+#p2 {
+  background-color: #DEB887;
+}
+#p3 {
+  background-color: #5F9EA0;
+  /* NO4. now if we apply clear left here then box 3 will not allowed anything to float towaeds its left so this must jump down see if it happens */
+  clear: left;
+  /* yes that happened */
+}
+#p4 {
+  background-color: #FF7F50;
+}
+section{
+    clear: left;
+    /*NO3. due to this the content of section will jum right below the boxes */
+}
+
+</style>
+</head>
+<body>
+<h1>Floating Elements</h1>
+
+<div>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
+
+</body>
+</html>

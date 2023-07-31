@@ -3,11 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Cascade of CSS</title>
-<link rel="stylesheet" href="external.css">
+<link rel="stylesheet" href="C:\Users\AR MALIK\Documents\GitHub\courseraproject1\css-files\external.css">
 <style>
 
 p {
-  color: maroon;
+  color: yellow;
+  /* here notice we have already define color of text white in css file attached but because we have over write  this by here declaring the text color of each p element should be yellow
+  so we are seeing yellow text buttt because we have given style attribute in second p tag so we have over written this declaration also for second p so second p will follow that command due to conflict and wins because that is declared last. but notice that each p is following that font size command and background color command because this is not overwritten this is the example of merge  */
 }
 
 </style>
@@ -18,3 +20,13 @@ p {
 <p style="color: black;">If there is no conflict, declarations merge into one rule.</p>
 </body>
 </html>
+<!-- Origin precedence rule (when in conflict)
+when two declarations are in conflict means the specify same property for the same target origin precedence rules comes into play and it is very simple rule 
+THE LAST DECLARATION WINS 
+REMEMBER?
+HTML IS PROCESSED SEQUENTLY MEANS TOP TO BOTTOM
+ so more a declaration is being made at last more it is being preferred 
+ but 
+ when there is no conflict then rule is simple 
+ THE DECLARATIONS MERGE 
+ means if we target some thing in to different declarations for example in font size is declare and in other color of text is declare so as long as the target is same both will apply on and text and we say they are merged  --> 

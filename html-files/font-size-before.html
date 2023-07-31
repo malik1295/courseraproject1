@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Setting Font Size</title>
+<style>
+body{
+    font-size: 120%;
+    /* this makes the text 120% larger than whatever the default font size of browser is normally the font size of browser is 16% by default  */
+}
+</style>
+</head>
+<body>
+<div>Regular text</div>
+<!-- here we use in line styling because we are testing only -->
+<div style="font-size: 2em;">2em text
+  <div style="font-size: 2em;">4em text
+    <div style="font-size:0.5em;">2em again!</div>
+    <!-- to make last 2em again to small size we can decrease it we make it half the size of 4em  -->
+  </div>
+</div>
+</body>
+</html>
+<!-- two units for relative sizing of text 
+% and em 
+em is the unit of measurement and that is equivalent to the width of letter m in this font that we are using 2em is also equal to 200% so we can write it at 2em place and that will work same check it -->

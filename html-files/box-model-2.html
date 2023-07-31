@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>USE OF STAR SELECTOR</title>
+<style>
+    *{
+        box-sizing: border-box;
+        /* what this star selector do is it says go ahead and select every element that is there and apply this css property to that */
+    }
+/* to set the default margin of 8px we have a modification in body styling  by giving margin:0; and padding:0; this will remove the default margin and padding */
+body {
+  margin: 0;
+  padding: 0;
+  background-color:yellowgreen;
+  /* it is not good to give box-sizing: border-box ; at each box differently so we declare it here instead of in the #box because body is a top level element so this will apply to all the content of body butt do that and see this will not happen as u want whyyyy this is because box sizing is not inherit property so child element of body will not inherit that property then how we will get this for this see above the * star selector*/
+}
+
+#box { 
+  background-color: orange;
+  padding: 10px 30px 10px 30px;
+  border: 20px solid black;
+  margin:40px ;
+  width: 300px;
+  /* box-sizing: border-box; this will make the width of box what we specify and without this the width will be the width of content plus both sides margin plus both side padding all the frame work such as bootstrap use border-box as its sizing model and make sure you always use this  */
+}
+#content {
+  background-color: skyblue; 
+  border: 1px solid red;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+</div>
+
+
+</body>
+</html>
+<!-- in html every element is considered a box
+but more important to box is the content inside the box
+each box consists of 
+padding(around the content box)
+border(around the padding)
+margin(width outside the border ) -->

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Relative Positioning</title>
+<!-- positioning allows u to move target to move it to the different part of page or region
+there are two types 1.static positioning 2.relative positioning
+1.static positioning:
+this is a different way of saying normal document flow a default setting for all Elements
+2.relative positioning
+element is positioned relative to its position in normal document flow 
+positioning css properties are top, bottom,left,right important thing of relative positioning is that element is not taken out of normal document flow even it is moved its orignal path is preserved -->
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+div#container {
+  background-color: #00FFFF;
+  
+}
+p {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 15px;
+}
+#p1 {
+  background-color: #A52A2A;
+  position: relative;
+  /* this makes his present postion fix and now if we move it from here its position will stay there see this */
+  top: 65px;
+  left: 65px;
+  /* see its jump down in front of 2nd box  */
+}
+#p2 {
+  background-color: #DEB887;
+}
+#p3 {
+  background-color: #5F9EA0;
+}
+#p4 {
+  background-color: #FF7F50;
+}
+
+</style>
+</head>
+<body>
+<h1>Positioning Elements</h1>
+
+<div id="container">
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+</div>
+
+</body>
+</html>

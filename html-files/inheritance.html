@@ -8,9 +8,11 @@ body {
   color: red;
   text-align: center;
   font-family: Helvetica;
+  /* here we have declared font family and text center so whole document of body tag will have these attributes even if we dont specify them for each of them separately(unless we over write it) that is what inheritance means */
 }
 p {
   color: blue;
+  /* CASCADING is done here means here we over written that text of p element will be blue which previously declared as red in body css so last will win as we know */
 }
 </style>
 </head>
@@ -22,3 +24,7 @@ p {
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ad excepturi eveniet odio, fuga nam quidem reprehenderit placeat commodi? In laudantium cum nam quod vitae at eligendi consequatur sequi cumque.</p>
 </body>
 </html>
+<!-- Basic idea is DOM(document object model)
+it means if we specify some css property on some element all the children and grand children and so on and so will also inherit that property without u to specify property for each and every elements
+EXAMPLE 
+if we specify some property on body tag then every  element that is a child of body tag or even child of child of body tag will inherit that property -->
