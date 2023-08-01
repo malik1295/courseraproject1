@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>David Chu's China Bistro</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <!-- remember there are two types of container 
+                1. container-fluid: this streches all the to the edge of browser and hs a bitt of padding on both sides about 15 px
+                2.regular container: it changes its width based on the width of browser we use this because our content is not going to the edge of browser but stays almost in middle now as div is inside the nav bar so nav is going to streach all the way to the width of browser but its content not as we discussed -->
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-md visible-lg">
+                        <div id="logo-img" alt="Logo image"></div>
+                    </a>
+                    <div class="navbar-brand">
+                      <a href="index.html"><h1>David Chu's China Bistoro</h1></a>
+                      <p>
+                        <img src="images/star-k-logo.png" alt="Kosher certification">
+                        <span>Kosher Certified</span>
+                      </p>
+                    </div>
+                    <!-- *****************lecture no.31*************************** -->
+                    <!-- lecture no.31: 
+                  the class navbar-toggle is controllimg the position of whole button as this is a class in bootstrap.css so it is giving positioning and styling the collapsed class is not in bootsrap but it is giving the state to button that it will remain collapsed until it is clicked the other collapse used in data-togle is controlling the button in pulling out and going in this is in bootstrap.js  -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <!-- lecture no 31:after this a button will appear on top right corner of browser window when we squeze it enough at this stage it is not working but we are going to give features and when we do that the id #cllapsable-nav is going to be very important for the elements in this button-->
+                    </button>
+                </div>
+                <!-- *************lecture no.32 part-1******************************* -->
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+           <li>
+             <a href="menu-categories.html">
+               <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+           </li>
+           <li>
+             <a href="#">
+               <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+           </li>
+           <li id="phone" class="hidden-xs">
+             <a href="tel:410-602-5008">
+               <span>410-602-5008</span></a><div>* We Deliver</div>
+           </li>
+         </ul><!-- #nav-list -->
+       </div><!-- .collapse .navbar-collapse -->
+     </div><!-- .container -->
+   </nav><!-- #header-nav -->
+            </div>
+        </nav>
+    </header>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
