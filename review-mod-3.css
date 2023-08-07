@@ -1,0 +1,355 @@
+/*********************************review 1************************************/
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+.navbar{
+
+border: none;
+background-color: black;
+color: #61122F;
+}
+body{
+	background-color: #61122F;
+	color: white;
+}
+.glyphicon{
+	font-size: 30px;
+	color:#61122F; 
+}
+
+.center{
+	width: 90%;
+	background-color: grey;
+
+}
+.container
+{
+	background-color: grey;
+}
+.text-center{
+	font-size: 30px;
+}
+
+h2{
+	text-align: center;
+}
+#myNavbar ul li a {
+	color: #61122F;
+}
+.navbar-brand{
+font-size: 30px;	
+}
+/*****************************review 2*********************************************/
+*
+{
+    padding: 5px;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.fixed
+{
+    position: fixed;
+    width: 100%;
+    
+}
+
+.container
+{   
+    display:grid;
+    flex-flow: row wrap;
+    grid-template-columns: repeat(auto-fit,minmax(50%,auto));
+    /* background-color: blueviolet; */
+}
+
+.icon
+{
+    display: none;
+
+}
+
+.third
+{
+    margin-top: 150px;
+}
+
+section h2
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flow
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: justify;
+    
+}
+
+.a
+{
+    width: 30%;
+}
+
+.flow h3
+{
+    text-align: center;
+}
+
+.navmenu
+{
+    display: none;
+   width: 100%;
+    position: fixed;
+    background-color: gray;
+    top: 80px;
+    left: -400px;
+}
+
+li
+{
+    text-align: center;
+}
+
+
+
+@media screen and (min-width:600px) and (max-width:900px)
+{
+    .flow
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: justify;
+    
+}
+
+.a
+{
+    width: 45%;
+}
+#b
+{
+    width: 95%;
+}
+}
+
+@media screen and  (max-width:599px)
+{
+    .flow
+{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    text-align: justify;
+    
+}
+
+.a
+{
+    width: 97%;
+}
+
+.icon
+{
+    display: grid;
+    justify-content: end;
+    font-size: x-large;
+    cursor: pointer;
+
+}
+
+
+.navmenu
+{
+    display: block;
+}
+
+}
+/***************************review3********************************/
+
+.container-fluid{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar{
+	border-radius: 0px;
+	background-color: rgb(21, 155, 208);
+}
+
+.navbar-brand{
+  font-size: 35px;
+  color: rgb(2, 2, 2);
+  padding-left: 25px;
+}
+
+.navbar-brand:hover{
+	color: white;
+}
+
+.nav{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-nav{
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-toggle{
+	border: 2px solid white;
+	margin-right: 25px;
+}
+
+.icon-bar{
+	background-color: white;
+}
+
+
+.main-title{
+  margin-bottom: 15px;
+  text-align: center;
+  color: #0c0c0d;
+  font-size: 50px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+}
+
+li{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.menu-item{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid black;
+	color: rgb(10, 10, 10);
+	display: block;
+}
+
+.menu-item:hover{
+	background-color: rgba(0,0,0,0.9);
+	color: rgba(0,0,0,0.4);
+}
+
+.row{
+	margin: 20px;
+}
+
+.content-box{
+	margin: 20px;
+	width: auto;
+	height: auto;
+	color: black;
+	background-color: rgba(193, 183, 239, 0.904);
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	padding: 20px;
+}
+
+.item-name{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+    color: rgb(5, 4, 3);
+}
+
+.text{
+    color: #0b0b10;
+}
+/*********************************************review4****************************************/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px;
+    color: rgb(80, 43, 43);
+    background-color: #edd2e0;
+    font-family: 'Oxygen', sans-serif;;
+  }
+  
+  /** HEADER **/
+  #header-nav {
+    background-color: #dbabbe;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  .navbar-brand a {
+    font-family: 'Lora', serif;
+    color: #723d46;
+    font-size: 3.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    text-decoration: none;
+  }
+  
+  .navbar-toggler {
+    padding: 10px 10px;
+    margin-right: 0;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+  }
+  
+  #collapsable-nav {
+    background-color: #baa1a7;
+  }
+  
+  .nav-item:nth-child(1), .nav-item:nth-child(2) {
+    border-bottom: 1px solid #9e6668;
+    color: #61122f;
+  }
+  
+  .nav-item a {
+    color: #61122f;
+    font-size: 1.8em;
+  }
+  
+  .nav-item a:hover {
+    background: #dec9e9;
+  }
+  
+  #page-heading {
+    color: #773344;
+    font-size: 2.5em;
+    text-shadow: 0 0 2px #773344;
+    margin: 50px auto 50px auto;
+  }
+  
+  #menu-tile {
+    position: relative;
+    background-color: #edbbb4;
+    border: none;
+    box-shadow: 0 0 20px #cf8f97;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: auto 10px 80px 10px;
+  }
+  
+  #menu-tile p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  #Chicken, #Beef, #Sushi {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3b0210;  
+    margin: 15px auto 15px auto;
+  }
+  
